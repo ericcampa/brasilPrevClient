@@ -1,0 +1,14 @@
+server:
+  port: 8080
+security:
+  jwt:
+    key-store: classpath:keystore.jks
+    key-store-password: letmein
+    key-pair-alias: mytestkey
+    key-pair-password: changeme
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true  data:    mongodb:      uri: mongodb+srv://toolth_user:toolth_pass@cluster0-vuwrj.mongodb.net/test?retryWrites=true&w=majority
+      
